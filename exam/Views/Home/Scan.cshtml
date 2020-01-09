@@ -1,0 +1,19 @@
+﻿@model IEnumerable<DbModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <table border="1">
+        <tr><th>Url</th><th>Text</th></tr> <!--ряд с ячейками заголовков-->
+        @{
+            foreach (var _model in Model)
+            {
+                <tr><td>@_model.url</td><td>@_model.body</td></tr>
+
+            }
+        }
+
+    </table>
+    
+        <link rel="stylesheet" href="https://localhost:44302/Home/Results" />
+</div>

@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <label>Url в формате "http/https://*"</label>
+
+        <form asp-action="Scan" class="cart">
+            
+            <div class="quantity">
+                <a>Глубина</a>
+                <input type="number" size="4" class="input-text qty text" title="depth" value="1"
+                       name="depth" min="1" step="1">
+            </div>
+            <a>Url</a>
+            <input type="text" name="url" placeholder="url">
+            <button class="add_to_cart_button" type="submit">Scan</button>
+
+        </form>
+
+        <link rel="stylesheet" href="https://localhost:44302/Home/Scan" />
+        <link rel="stylesheet" href="https://localhost:44302/Home/Privacy" />
+    </div>
